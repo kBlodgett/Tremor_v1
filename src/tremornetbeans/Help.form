@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,112,0,0,1,-94"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="helpScrollPane">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="60" width="390" height="290"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="helpTextArea">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="PLEASE NOTE:&#x9;&#xa;If you enter in another file after running a&#xa;previous file, be sure to click clear. &#xa;&#xa;------TABLE OF CONTENTS------&#xa;Entering In The File&#xa;Entering In Thresholds&#xa;Entering In Multiple Files&#xa;View Options - File&#xa;View Options - Events&#xa;View Options - Daily Events&#xa;View Options - Statistics&#xa;View Options - Overall&#xa;Save&#xa;Load&#xa;Clear&#xa;&#xa;------ENTERING IN THE FILE------&#xa;&#xa;filename.csv:&#xa;In the bar with the text &quot;filename.csv&quot; click&#xa;to access the file selection. With the file&#xa;selection you can find your file and open it.&#xa;Once you click open you will see the file&#xa;path replace the text &quot;filename.csv&quot;.&#xa;&#xa;Format:&#xa;The format is the type of layout of the file. &#xa;Enter only the numbers 1-4 into this text field&#xa;or the program will error/terminate.&#xa;&#xa;Depending on how you converted the ActiLife &#xa;data into a CSV file is how you know which&#xa;format to choose. If you opened the file in&#xa;ActiLife and then converted it, you will use &#xa;either 1 or 4 depending on if the file is in &#xa;seconds or minutes. If you did not open the&#xa;file in ActiLife and only used ActiLife to &#xa;convert the file, you will use either 2 or 3.&#xa;&#xa;To know which type of file it could be when &#xa;you were not the user that converted the file,&#xa;look at the file name.&#xa;If the file name contains &quot;DataTable&quot;, then&#xa;the file is format 1 or 4. If &quot;DataTable&quot; is&#xa;not in the file title, then it is format 2 or 3.&#xa;&#xa;To know if the file is in minute or second &#xa;increments, look to the file title. If the title&#xa;contains &quot;60secs&quot; then the file is in minute&#xa;increments. If the title contains &quot;1sec&quot; then the&#xa;file is in second increments.&#xa;&#xa;The format choices are as follows:&#xa;1 - The data is in minute increments.&#xa;2 - The data is in second increments.&#xa;3 - Alternate choice for minute increments. &#xa;4 - Alternate choice for second increments. &#xa;&#xa;BE PATIENT (Phantom Freeze)&#xa;The program takes some time to read the file. &#xa;After closing the window that prompts you &#xa;about the loading time, the threshold window &#xa;will pop up within a few minutes. If it takes &#xa;longer than a few minutes exit the program and &#xa;try again. If the program continues to do &#xa;this, try the alternate format option for the&#xa;files type of incements.&#xa;For example, if the number you entered for &#xa;format was 1 (file is in minute increments)&#xa;then the alternate format would be 3.&#xa;&#xa;------ENTERING IN MULTIPLE FILES------&#xa;To enter in multiple files you enter your first&#xa;file and hit enter. Then you will be prompted&#xa;about whether or not you would like to read in &#xa;another file. Once you click yes click the text&#xa;field where you entered in the first file. Once&#xa;it is finished loading the first file it will &#xa;then pop up the file search menu. Once you &#xa;select your file and hit enter it will prompt you&#xa;again. This cycle continues until all files wanted&#xa;are entered. &#xa;Please note that the more files you enter, the &#xa;longer it will take to load each file. &#xa;  &#xa;&#xa;------ENTERING IN THRESHOLDS------&#xa;The starting heart rate threshold must be &#xa;HIGHER than the ending heart rate tremor.&#xa;Default Thresholds:&#xa;Starting Heart-rate: 120 &#xa;Ending Heart-rate: 100&#xa;Movement: 5000 &#xa;Thresholds are what helps the program&#xa;define a tremor when processing the file.&#xa;&#xa;------VIEW OPTIONS - FILE------&#xa;This is the option to view the raw file that &#xa;was read in. It gives every min/sec from the &#xa;device. This option takes a while to load, &#xa;Please be patient. Got to the LOAD section for&#xa;more information. There is also a save &#xa;function on this window, Please refer to SAVE &#xa;section.&#xa;&#xa;------VIEW OPTIONS - EVENTS------&#xa;This is the option to view all tremor events.&#xa;It gives you information about what is happen&#xa;during each tremor. There is also a save &#xa;function on this window, Please refer to SAVE &#xa;section.&#xa;&#xa;------VIEW OPTIONS - DAILY EVENTS------&#xa;This is the option to view how many tremors &#xa;happened per day in the file and gives &#xa;statistics about the tremors each day. &#xa;On days that show 0 tremors, the statistics shown&#xa;are for the day overall since there is not any &#xa;tremor data to average. &#xa;There is also a save function on this window.&#xa;Please refer to SAVE section.&#xa;&#xa;------VIEW OPTIONS - STATISTICS------&#xa;This is to view the overall statistics about &#xa;the file regarding the tremors. This is where&#xa;you see the mean, max, min and other &#xa;calculations. There is also a save function on&#xa;this window, Please refer to SAVE section.&#xa;&#xa;------VIEW OPTION - OVERALL------&#xa;This is to view the overall statistic about each&#xa;day. You will see mean, max, min and other&#xa;calculations concerning each day.&#xa;There is also a save function on this window,&#xa;Please refer to SAVE section.&#xa;&#xa;------SAVE------&#xa;When ever you save a file using one of the &#xa;view option windows, it saves using the file&#xa;selection. Find where you would like to save&#xa;your file then type what you would like your&#xa;file to be titled then hit save.&#xa;You will find your file where you selected to &#xa;save it. If you forgot to select where to &#xa;save it, you will find it in your documents &#xa;folder.&#xa;&#xa;------LOAD------&#xa;The load time required for your file depends on &#xa;how large of a file it is. The loading process&#xa;can take anywhere between 3minutes to an hour. It could &#xa;take longer if you have chosen to load many files at&#xa;one time. This only applies to when ou chose the &#xa;file button for the view options menu.&#xa;Please note that although the program seems&#xa;unresponsive after clicking the file button, &#xa;it is a sign that it is loading your request.&#xa;&#xa;------CLEAR------&#xa;To clear the &quot;filename.csv&quot; and the &quot;format&quot;&#xa;text fields, click the clear button right &#xa;below the enter button and it will clear.&#xa;"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="helpBackground">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/AppPackage/Help - Background.png"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="-10" y="0" width="430" height="370"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
